@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM WATCHING YOU</title> <!-- Title updated here -->
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+      position: relative;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 45%;
+      border: none;
+    }
+
+    /* Creepy shadow styles */
+    .shadow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      animation: moveShadow 3s infinite alternate, growShadow 3s infinite alternate;
+      z-index: 10;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes moveShadow {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        transform: translate(calc(-50% + 200px), calc(-50% + 200px)) scale(1.5);
+      }
+    }
+
+    @keyframes growShadow {
+      0% {
+        width: 100px;
+        height: 100px;
+      }
+      100% {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    /* Text inside the bouncing ball */
+    .shadow-text {
+      font-size: 12px;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+      font-weight: bold;
+    }
+
+    /* Text styling */
+    .message {
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ff5500;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <!-- Creepy Shadow effect with text inside -->
+  <div class="shadow">
+    <div class="shadow-text">RIP ALL 30 - 45 YR OLDS</div>
+  </div>
+
+  <!-- YouTube Video Embed (with autoplay) -->
+  <iframe 
+    src="https://www.youtube.com/embed/UpBqMSV8U8Y?autoplay=1&mute=1" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <!-- Text Message -->
+  <div class="message">
+    We are explo FATANGRYTOAST, ILIKEYACUGE, MRNOOB, THAT SKIDs 101, AND VINCE, WE ARE COMING FOR YOU BITCHES
+  </div>
+
+  <script>
+    // You can add any JS here to modify the behavior of the shadow, video, or player
+  </script>
+</body>
+</html>
